@@ -50,44 +50,50 @@ h2{
     margin-right: auto;
 }
 
-.navbar-brand {
-    font-size: 2em;
-    border: 0 0 10px 10px;
-    color: #FFFFFF;
-  }
-  
-  #header-nav {
-    border: 0;
-    background-color: #FC5F06;
-    color: #FFFFFF;
-  }
-  
-  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-    border: 1px solid #61122f;
-  }
-  .navbar-header button.navbar-toggle {
-    clear: both;
-    margin-top: -30px;
-  }
-  
-  .nav-header {
-    background-color: #FFFFFF;
-  }
-  
-  .nav-brand {
-    color: #FFFFFF;
-    font-size: 1.5em;
-  }
-  
-  #nav-list {
-    color: white;
-  }
-  
-  hr {
+.nav{
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-nav{
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-toggle{
+	border: 2px solid white;
+	margin-right: 25px;
+}
+
+hr{
     border-color: white;
+}
+
+li{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.item{
+  padding: 15px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-bottom: 1px solid black;
+  color: black;
+  display: block;
+}
+
+.item:hover{
+	background-color: rgba(201, 199, 199, 0.9);
+	color: rgba(0,0,0,0.4);
+}
+
+@media (max-width: 768px){
+  .navbar-default .navbar-collapse{
+    background-color: rgba(255, 235, 205, 0.87);
   }
-  
-  .item {
-    color: white;
-    font-size: 1.2em;
-  }
+}
